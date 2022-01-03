@@ -1,0 +1,167 @@
+* { margin: 0; padding: 0}
+html{
+    height: 100vh;
+    max-width: 100%;
+}
+body{
+    height: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    height:10%;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navList{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+
+/* -------------- Header Ends -----------------*/
+
+/* Index Page */
+.intro{
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/R.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 5px white inset;
+    
+}
+.blockSection{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.block{
+    width: 20%;
+    height: 100%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 100ms);
+    cursor: pointer;
+}
+.icon{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconText{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.block:hover{
+    background-color: grey;
+    border-color: grey;
+}
+
+@keyframes dropIn {
+    from {transform: translateY(-500px) ;}
+    to{transform: translateY(0px);}
+}
+
+/* ---------- Index Ends -------- */
+
+/* About */
+.aboutSection{
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/R.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 5px white inset;
+}
+
+.aboutBox{
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 3px 5px 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.aboutTitle{
+    margin: 5%;
+}
+.aboutText{
+    width: 60%;
+    height: 80%;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ------ About Ends ------- */
+
+.contactSection{
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/R.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 5px white;
+}
+.formSection{
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: 5px 5px 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.submitBtn{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+}
+
+
